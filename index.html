@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17792429370"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17792429370');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Taxi Rye | Local & Airport Transfers</title>
+    <meta name="description" content="Trusted taxi service in Rye, East Sussex. Airport transfers, local trips, tours & long-distance travel. Book online or call 07479 012 485.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            /* Rye harbour palette — warm cream, olive green, gold */
+            --bg-cream: #f0ebe0;
+            --bg-cream-warm: #ede7db;
+            --bg-sand: #e5ddd0;
+            --card-white: #f8f5ef;
+            --card-cream: #f0ece2;
+
+            /* PRIMARY: Warm forest green from poster */
+            --primary: #3d5c3a;
+            --primary-dark: #2e4a2c;
+            --primary-light: #4a6e47;
+            --primary-muted: #5a7857;
+
+            --btn-green: #3d5c3a;
+            --btn-hover: #4a6e47;
+
+            --text-dark: #2c2c2a;
+            --text-mid: #5a5a52;
+            --text-light: #7a7a72;
+
+            --gold-accent: #c5a059;
+            --gold-light: #d4b574;
+            --gold-warm: #b8944e;
+            --gold-dark: #a07830;
+
+            --sand: #d9ceb8;
+            --sand-light: #e6ddd0;
+
+            --footer-bg: #ede7db;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            font-family: 'Lato', sans-serif;
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+            color: var(--primary);
+        }
+
+        a { text-decoration: none; }
+
+        /* ==================== HERO SECTION — FULL BANNER ==================== */
+        .hero {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: var(--bg-cream);
+        }
+
+        .hero-banner {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .hero-cta {
+            background: var(--bg-cream);
+            text-align: center;
+            padding: 28px 20px 32px;
+        }
+
+        .hero-cta h1 {
+            color: var(--primary);
+            font-size: 2.6rem;
+            font-weight: 900;
+            margin-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        .hero-tagline {
+            color: var(--gold-warm);
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            font-size: 1.35rem;
+            margin-bottom: 22px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-gold {
+            background: var(--gold-accent);
+            color: var(--white);
+            box-shadow: 0 3px 10px rgba(197,160,89,0.3);
+        }
+        .btn-gold:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(197,160,89,0.4);
+        }
+
+        .btn-outline {
+            background: var(--primary);
+            color: var(--white);
+            border: 2px solid var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary-light);
+            border-color: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(61,92,58,0.3);
+        }
+
+        /* Gold divider */
+        .gold-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+            border: none;
+            margin: 0;
+        }
+
+        /* ==================== ANNOUNCEMENT BAR ==================== */
+        .announcement {
+            background: var(--card-white);
+            text-align: center;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--sand-light);
+        }
+
+        .announcement p {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--text-mid);
+        }
+
+        .announcement strong {
+            color: var(--primary);
+        }
+
+        .announcement a {
+            color: var(--gold-accent);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        /* ==================== MAIN CONTENT ==================== */
+        .main-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 18px;
+        }
+
+        /* ==================== SECTION: SERVICES ==================== */
+        .section {
+            padding: 32px 0 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .section-header h2 {
+            font-size: 2.1rem;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            color: var(--text-mid);
+            font-size: 1.25rem;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        .section-header .gold-line {
+            width: 50px;
+            height: 3px;
+            background: var(--gold-accent);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Services — Cards with circular icons */
+        .service-block {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            background: var(--card-white);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+
+        .service-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service-icon-box {
+            flex: 0 0 76px;
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 12px 8px 12px 16px;
+            background: linear-gradient(135deg, var(--gold-accent), var(--gold-warm));
+            color: var(--white);
+            font-size: 1.6rem;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(197,160,89,0.25);
+        }
+
+        .service-block.reverse .service-icon-box {
+            margin: 12px 16px 12px 8px;
+            border-radius: 50%;
+        }
+
+        .service-text {
+            flex: 1;
+            padding: 16px 22px 16px 14px;
+        }
+
+        .service-block.reverse .service-text {
+            padding: 16px 14px 16px 22px;
+        }
+
+        .service-text h3 {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+            color: var(--primary);
+        }
+
+        .service-text p {
+            font-size: 1.02rem;
+            color: var(--text-mid);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* ==================== FARE ESTIMATOR CTA ==================== */
+        .fare-cta {
+            background: var(--bg-cream-warm);
+            border-radius: 14px;
+            padding: 32px 28px;
+            text-align: center;
+            margin: 8px 0 28px;
+            position: relative;
+            border: 2px solid var(--sand);
+        }
+
+        .fare-cta h2 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .fare-cta p {
+            color: var(--text-mid);
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+
+        .fare-cta .btn {
+            font-size: 1.15rem;
+            padding: 16px 36px;
+        }
+
+        /* ==================== COVERAGE AREA ==================== */
+        .coverage {
+            background: var(--card-white);
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .coverage h2 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .coverage > p {
+            color: var(--text-mid);
+            font-size: 1.05rem;
+        }
+
+        .village-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .village-tag {
+            background: var(--bg-cream-warm);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border: 1px solid var(--sand);
+        }
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact-section {
+            background: var(--card-white);
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 8px;
+            font-size: 1.6rem;
+        }
+
+        .contact-detail {
+            font-size: 1.15rem;
+            color: var(--text-mid);
+            margin-bottom: 5px;
+        }
+
+        .contact-detail a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-phone {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .contact-phone a {
+            font-size: 1.5rem;
+        }
+
+        .licence-badge {
+            display: inline-block;
+            margin-top: 12px;
+            background: var(--bg-cream-warm);
+            color: var(--primary);
+            padding: 7px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            border: 1.5px solid var(--sand);
+        }
+
+        .social-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--white);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: var(--primary);
+            border: 1px solid var(--sand-light);
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .social-icon .fa-whatsapp { color: #25D366; }
+        .social-icon .fa-facebook { color: #1877F2; }
+        .social-icon .fa-instagram { color: #E4405F; }
+        .social-icon .fa-tripadvisor { color: #34E0A1; }
+        .social-icon .fa-house-user { color: #8ED500; }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: var(--footer-bg);
+            text-align: center;
+            padding: 18px 15px;
+            margin-top: 8px;
+            border-top: 2px solid var(--sand);
+        }
+
+        footer p {
+            color: var(--text-mid);
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        footer a {
+            color: var(--gold-dark);
+            text-decoration: underline;
+            font-size: 0.9rem;
+        }
+
+        /* ==================== MOBILE STICKY BAR ==================== */
+        .mobile-sticky {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.12);
+        }
+
+        .mobile-sticky .sticky-actions {
+            display: flex;
+            height: 66px;
+        }
+
+        .sticky-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .sticky-btn.dark {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .sticky-btn.gold {
+            background: var(--gold-accent);
+            color: var(--white);
+        }
+
+        /* ==================== PRIVACY MODAL ==================== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: var(--card-white);
+            margin: 15% auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 520px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .close {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .modal-content h3 { margin-bottom: 12px; font-size: 1.3rem; }
+        .modal-content p { font-size: 1rem; color: var(--text-mid); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            body { font-size: 16px; }
+
+            .hero-cta { padding: 22px 18px 28px; }
+            .hero-cta h1 { font-size: 2.1rem; }
+            .hero-tagline { font-size: 1.2rem; }
+
+            .section-header h2 { font-size: 1.7rem; }
+            .section-header p { font-size: 1.1rem; }
+
+            .service-block,
+            .service-block.reverse {
+                flex-direction: row;
+            }
+
+            .service-block.reverse {
+                flex-direction: row-reverse;
+            }
+
+            .service-icon-box {
+                flex: 0 0 60px;
+                height: 60px;
+                font-size: 1.25rem;
+                margin: 10px 6px 10px 12px;
+            }
+
+            .service-block.reverse .service-icon-box {
+                margin: 10px 12px 10px 6px;
+            }
+
+            .service-text,
+            .service-block.reverse .service-text {
+                padding: 12px 16px;
+                text-align: left;
+            }
+
+            .service-text h3 { font-size: 1.1rem; }
+            .service-text p { font-size: 0.95rem; }
+
+            .fare-cta { padding: 26px 20px; }
+            .fare-cta h2 { font-size: 1.4rem; }
+            .fare-cta p { font-size: 1rem; }
+
+            .coverage h2 { font-size: 1.3rem; }
+            .contact-section h2 { font-size: 1.4rem; }
+            .contact-detail { font-size: 1.05rem; }
+
+            .mobile-sticky { display: block; }
+            body { padding-bottom: 66px; }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                font-size: 1.1rem;
+                padding: 15px 28px;
+            }
+
+            .btn { font-size: 1.05rem; padding: 14px 28px; }
+        }
+
+        @media (min-width: 769px) {
+            .hero-cta { padding: 32px 20px 36px; }
+            .hero-cta h1 { font-size: 2.8rem; }
+            .section-header h2 { font-size: 2.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HERO — Full Banner Image ===== -->
+    <section class="hero">
+        <img src="hero-banner.jpg" alt="Village Taxi Rye — Trusted transport in historic Rye" class="hero-banner">
+        <div class="hero-cta">
+            <h1>Village Taxi Rye</h1>
+            <p class="hero-tagline">Trusted transport in the heart of historic Rye</p>
+            <div class="hero-buttons">
+                <a href="https://book.taxirye.co.uk" target="_blank" class="btn btn-gold">
+                    <i class="fa-solid fa-calculator"></i> Get a Fare Estimate
+                </a>
+                <a href="tel:07479012485" class="btn btn-outline">
+                    <i class="fa-solid fa-phone"></i> 07479 012 485
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="gold-divider">
+
+    <!-- ===== ANNOUNCEMENT ===== -->
+    <div class="announcement">
+        <p><strong>New!</strong> Try our <a href="https://book.taxirye.co.uk" target="_blank">Taxi Fare Estimator</a> — instant quotes by postcode, distance, or date.</p>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <div class="main-wrapper">
+        <section class="section">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>From village hops to airport runs, we keep you moving.</p>
+                <div class="gold-line"></div>
+            </div>
+
+            <div class="service-block">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <div class="service-text">
+                    <h3>Airport Transfers</h3>
+                    <p>Gatwick, Heathrow, Stansted and all major UK airports. Flight tracking and luggage assistance included.</p>
+                </div>
+            </div>
+
+            <div class="service-block reverse">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+                <div class="service-text">
+                    <h3>Long Distance</h3>
+                    <p>London, Brighton, Canterbury, Ashford and beyond. Perfect for business, appointments or getaways.</p>
+                </div>
+            </div>
+
+            <div class="service-block">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="service-text">
+                    <h3>Local Trips</h3>
+                    <p>Quick, comfortable rides across Rye, Peasmarsh, Beckley, Battle and Robertsbridge.</p>
+                </div>
+            </div>
+
+            <div class="service-block reverse">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="service-text">
+                    <h3>Day Tours</h3>
+                    <p>Bodiam Castle, Camber Sands, Chapel Down and Gusbourne vineyards with your own private driver.</p>
+                </div>
+            </div>
+
+            <div class="service-block">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <div class="service-text">
+                    <h3>Events & Pubs</h3>
+                    <p>Weddings, parties and pub nights. Flexible wait-and-return journeys so you enjoy worry-free.</p>
+                </div>
+            </div>
+
+            <div class="service-block reverse">
+                <div class="service-icon-box">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="service-text">
+                    <h3>24/7 Pre-Booked Service</h3>
+                    <p>Early mornings, late nights — book ahead and we will be there. Always on time, always professional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FARE CTA ===== -->
+        <div class="fare-cta">
+            <h2><i class="fa-solid fa-bolt" style="color:var(--gold-accent);"></i> Plan Your Journey</h2>
+            <p>Get an instant fare estimate — no registration, no surprises.</p>
+            <a href="https://book.taxirye.co.uk" target="_blank" class="btn btn-gold">
+                <i class="fa-solid fa-calculator"></i> Calculate Fare
+            </a>
+        </div>
+
+        <!-- ===== COVERAGE ===== -->
+        <div class="coverage">
+            <h2>Areas We Serve</h2>
+            <p>Covering Rye and the surrounding villages of East Sussex and Kent.</p>
+            <div class="village-tags">
+                <span class="village-tag">Rye</span>
+                <span class="village-tag">Battle</span>
+                <span class="village-tag">Robertsbridge</span>
+                <span class="village-tag">Bodiam</span>
+                <span class="village-tag">Staplecross</span>
+                <span class="village-tag">Hurst Green</span>
+                <span class="village-tag">Etchingham</span>
+                <span class="village-tag">Beckley</span>
+                <span class="village-tag">Broad Oak</span>
+                <span class="village-tag">Peasmarsh</span>
+                <span class="village-tag">Camber</span>
+            </div>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p class="contact-detail"><i class="fa-solid fa-location-dot" style="color:var(--gold-accent);"></i> The Strand, Rye, TN31 7DB</p>
+            <p class="contact-detail"><a href="mailto:booking@taxirye.co.uk">booking@taxirye.co.uk</a></p>
+            <p class="contact-detail contact-phone"><a href="tel:07479012485">07479 012 485</a></p>
+            <span class="licence-badge">Hackney Carriage Licence No. 212</span>
+
+            <div class="social-row">
+                <a href="https://wa.me/447479012485" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:07479012485" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.facebook.com/VillageTaxiRye" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/VillageTaxiRye" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.co.uk/Attraction_Review-g186276-d34074689-Reviews-Village_Taxi_Rye-Rye_East_Sussex_England.html" target="_blank" class="social-icon" aria-label="TripAdvisor"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="19" r="6" stroke="#34E0A1" stroke-width="2" fill="none"/><circle cx="22" cy="19" r="6" stroke="#34E0A1" stroke-width="2" fill="none"/><circle cx="10" cy="19" r="2.5" fill="#34E0A1"/><circle cx="22" cy="19" r="2.5" fill="#34E0A1"/><path d="M4 13c3-3 7-5 12-5s9 2 12 5" stroke="#34E0A1" stroke-width="2" stroke-linecap="round"/><path d="M16 4l-2 4h4l-2-4z" fill="#34E0A1"/></svg></a>
+                <a href="https://nextdoor.co.uk/page/village-taxi-rye" target="_blank" class="social-icon" aria-label="Nextdoor"><i class="fa-solid fa-house-user"></i></a>
+            </div>
+
+            <br>
+            <a href="#" onclick="document.getElementById('privacyModal').style.display='block'" style="font-size:0.95rem; color:var(--text-light); text-decoration:underline;">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 Village Taxi Rye. All Rights Reserved.</p>
+        <p>Designed by <a href="https://www.tr2uk.com" target="_blank">TR2UK&reg;</a></p>
+    </footer>
+
+    <!-- ===== MOBILE STICKY BAR ===== -->
+    <div class="mobile-sticky">
+        <div class="sticky-actions">
+            <a href="tel:07479012485" class="sticky-btn dark">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+            <a href="https://book.taxirye.co.uk" target="_blank" class="sticky-btn gold">
+                <i class="fa-solid fa-calendar-check"></i> Book Online
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== PRIVACY MODAL ===== -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('privacyModal').style.display='none'">&times;</span>
+            <h3>Privacy Policy</h3>
+            <p>
+                <strong>Data Controller:</strong> Village Taxi Rye (TN31 7DB).<br><br>
+                <strong>Data Collected:</strong> Name, phone, email, journey details.<br><br>
+                <strong>Purpose:</strong> Fulfilling taxi bookings and enquiries.<br><br>
+                <strong>Sharing:</strong> Only with licensed drivers. We never sell your data.<br><br>
+                <strong>Contact:</strong> booking@taxirye.co.uk
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('privacyModal');
+        window.onclick = function(event) {
+            if (event.target == modal) modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
